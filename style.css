@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+.table-div {
+  height: 300px;
+  color: #000;
+}
+
+table {
+  padding: 10px;
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  height: 200px;
+}
+
+tr {
+  padding: 10px;
+}
+
