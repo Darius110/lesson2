@@ -1,3 +1,6 @@
+/* this is the main style sheet  */
+/* color scheme */
+
 * {
   box-sizing: border-box;
 }
@@ -24,19 +27,58 @@ ul {
 }
 
 .table-div {
-  height: 300px;
-  color: #000;
+  color: #000; 
+  width: 100%;
 }
 
 table {
   padding: 10px;
   margin: auto;
-  width: 300px;
-  text-align: center;
-  height: 200px;
+  width: 30%;
 }
 
 tr {
   padding: 10px;
 }
 
+.fb-icon,
+.phone-icon,
+.email-icon {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  padding-right: 10px;
+}
+
+.mytown-text {
+  text-align: center;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.edinburgh-img {
+  height: 300px;
+  width: 500px;
+}
+
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: pink;
+  padding: 20px;
+}
