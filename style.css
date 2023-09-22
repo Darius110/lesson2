@@ -70,6 +70,8 @@ tr {
 .mytown-text {
   text-align: center;
   color: #fff;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 th,
@@ -112,4 +114,58 @@ label {
 .link-div {
   text-align: center;
   margin: 20px 0px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  background-color: #B8FFDA;
+  margin-bottom: 0px;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-map {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #B8FFDA;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+.contact-icon {
+  height: 80px;
+  width: 80px;
+}
+
+.contact-h1,
+.mygroup-h1 {
+  background-color: #B8FFDA;
+  width: 15%;
+  padding: 10px;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.mytown-h1 {
+    border-radius: 20px;
+    background-color: #B8FFDA;
+    padding: 10px;
+}
+
+.mytown-h1-width {
+    border-radius: 20px;
+    background-color: #B8FFDA;
+    padding: 10px;
+    width: 20%;
+    margin: auto;
 }
