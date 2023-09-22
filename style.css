@@ -1,22 +1,43 @@
 /* this is the main style sheet  */
-/* color scheme */
+/* color scheme 
+  #2B8254
+  #85291E
+  #e7a59d
+  #562a24
+  #B8FFDA
+*/
 
 * {
   box-sizing: border-box;
 }
 
+/* layout  */
+
 body {
   background-color: #2B8254;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* typography */
+
+p {
+  color: #ffffff;
 }
 
 a {
-  color: #fff;
-  font-weight: 900; 
   text-decoration: none;
 }
 
 a:hover {
-  color: #D7695C;
+  color: #B8FFDA;
 }
 
 h1 {
@@ -25,6 +46,14 @@ h1 {
   color: #85291E;
   font-family: 'Josefin Sans', sans-serif;
 }
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+/* Images */
 
 img {
   width: 400px;
@@ -36,94 +65,9 @@ img {
   padding: 20px;
 }
 
-ul {
-  text-align: center;
-  list-style-type: none;
-  padding-bottom: 20px;
-}
-
-.table-div {
-  color: #000; 
-  width: 100%;
-}
-
-table {
-  padding: 10px;
-  margin: auto;
-  width: 30%;
-  background-color: #B8FFDA;
-}
-
-tr {
-  padding: 10px;
-}
-
-.fb-icon,
-.phone-icon,
-.email-icon {
-  height: 30px;
-  width: 30px;
-  padding: 5px;
-  padding-right: 10px;
-}
-
-.mytown-text {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 50px;
-  margin-top: 30px;
-}
-
-th,
-td {
-  text-align: center;
-}
-
-.container {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 20px;
-  
-}
-
 .edinburgh-img {
   height: 300px;
   width: 500px;
-}
-
-form {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #B8FFDA;
-  width: 50%;
-  border-radius: 20px;
-}
-
-label {
-  color: #85291E;
-  font-weight: 900;
-  font-size: 20px;
-}
-
-.link-div {
-  text-align: center;
-  margin: 20px 0px;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: space-around;
-  background-color: #B8FFDA;
-  margin-bottom: 0px;
-  border-radius: 20px;
-  width: 50%;
-  margin: auto;
 }
 
 .contact-map {
@@ -140,11 +84,55 @@ label {
   margin-top: 20px;
 }
 
+/* Table */
+
+.table-div {
+  color: #000; 
+  width: 100%;
+}
+
+table {
+  padding: 10px;
+  margin: auto;
+  width: 30%;
+  background-color: #B8FFDA;
+  color: #000;
+}
+
+tr {
+  padding: 10px;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+/* Icons */
+
+.fb-icon,
+.phone-icon,
+.email-icon {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  padding-right: 10px;
+}
 
 .contact-icon {
   height: 80px;
   width: 80px;
 }
+
+/* Text */
+
+.mytown-text {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
 
 .contact-h1,
 .mygroup-h1 {
@@ -168,4 +156,130 @@ label {
     padding: 10px;
     width: 20%;
     margin: auto;
+}
+
+.copyright,
+.copy-mygroup {
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0;
+}
+
+
+/* Form */
+
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #B8FFDA;
+  width: 50%;
+  border-radius: 20px;
+}
+
+label {
+  color: #85291E;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* Links */
+
+.home-links {
+  color: #e7a59d;
+  font-weight: 900; 
+  text-decoration: none;
+}
+
+.link-div {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  background-color: #B8FFDA;
+  border-radius: 20px;
+  width: 25%;
+  margin: auto;
+}
+
+.footer-link {
+  color: #D7695C;
+  font-weight: 900;
+  text-decoration: none; 
+} 
+
+.footer-link:hover {
+  color: #B8FFDA;
+}
+
+.nav-link-colour {
+  font-weight: 900;
+}
+
+.nav-link-colour:hover {
+  color: #D7695C;
+}
+
+/* bg-color */
+
+.main-img,
+.hobbies {
+  background-color: #B8FFDA;
+}
+
+/* Nav */
+
+nav {
+  background-color:  #D7695C;
+  border: 1px solid #decade;
+  color: #ffffff;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #B8FFDA;
+  display: block;
+  line-height: 56px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+
+nav ul li:hover {
+  color: #fff;
+}
+
+nav ul li:hover {
+  background-color: #B8FFDA;
+}
+
+.hobbies ul li {
+  color: #000;
+}
+
+/* Footer */
+
+footer {
+  background-color: #562a24; 
+  color: #ffffff;
+  text-align: center;
+  padding: 3px;
+  margin-top: 20px;
+}
+
+.footer-mygroup {
+  padding: 0;
 }
