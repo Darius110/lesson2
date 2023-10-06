@@ -29,16 +29,16 @@ body {
 /* typography */
 
 p {
-  color: #ffffff;
+  color: #000;
 }
 
 a {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   color: #B8FFDA;
-}
+} */
 
 h1 {
   text-align: center;
@@ -46,6 +46,7 @@ h1 {
   color: #85291E;
   font-family: 'Josefin Sans', sans-serif;
 }
+
 
 ul {
   text-align: center;
@@ -56,7 +57,7 @@ ul {
 /* Images */
 
 img {
-  width: 400px;
+  width: 100%;
   height: 400px;
   margin: 0 auto;
   display: flex;
@@ -67,7 +68,7 @@ img {
 
 .edinburgh-img {
   height: 300px;
-  width: 500px;
+  width: 100%;
 }
 
 .contact-map {
@@ -77,11 +78,20 @@ img {
   justify-content: center;
   background-color: #B8FFDA;
   padding: 20px;
-  width: 50%;
+  width: 100%;
+  height: 400px;
   margin: auto;
   margin-bottom: 25px;
   border-radius: 20px;
   margin-top: 20px;
+}
+
+.contact-map-img {
+  width: 100%;
+}
+
+.map-img {
+  max-width: 100%;
 }
 
 /* Table */
@@ -177,6 +187,7 @@ form {
   background-color: #B8FFDA;
   width: 50%;
   border-radius: 20px;
+  margin-bottom: 50px;
 }
 
 label {
@@ -185,10 +196,22 @@ label {
   font-size: 20px;
 }
 
+ .container-message-box {
+   display: block;
+  }
+
+.message-box {
+  width: 100%;
+}
+
+.user-text-box {
+  width: 100%;
+}
+
 /* Links */
 
 .home-links {
-  color: #e7a59d;
+  color: #000;
   font-weight: 900; 
   text-decoration: none;
 }
@@ -284,9 +307,85 @@ footer {
   padding: 0;
 }
 
+/* columns */
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color:                    rgba(43,130,84,0.1);
+}
+
+.column-text {
+  color: #000;
+}
+
+/* Clear floats after the columns If an element is taller than the */
+/*element containing it, and it is floated, it will overflow outside of its container.*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* media querie */
 
 /* desktop */
+
+@media screen and (min-width: 992px) {
+  .row {
+    background-color: #bbffda;
+    padding: 10px;
+  }
+
+  .column {
+    background-color: rgba(43,130,84,1);
+    border: 2px solid #000;
+    margin-right: 10px;
+  }
+
+  .column-text {
+    color: #bbffda;
+  }
+
+   nav,
+  .main-img,
+  .hobbies,
+  footer {
+        border: 2px solid #000;
+  }
+
+  .hobbies {
+    margin-bottom: 50px;
+  }
+
+  footer {
+    background-color: #D7695C;
+  }
+
+  h1 {
+    color: #D7695C;
+  }
+
+  .footer-link {
+    color: blue;
+  }
+
+  .footer-link:hover {
+    color: #bbffda;
+  }
+
+  h2 {
+  color: #D7695C;
+}
+  
+}
 
 @media screen and (max-width: 992px){
   body,
@@ -296,6 +395,22 @@ footer {
   footer {
       background-color: rgba(43,130,84,1);
   }
+  .column {
+    width: 50%;
+  }
+
+    .footer-link {
+    color: blue;
+  }
+
+  .footer-link:hover {
+    color: #85291E;
+  }
+
+  h2 {
+  color: #D7695C;
+}
+
 }
 
 
@@ -310,9 +425,21 @@ footer {
       background-color: rgba(43,130,84,0.5);
   }
 
+  nav,
+  .main-img,
+  .hobbies,
+  footer {
+        border: 2px solid #bbffda;
+  }
+
+
+
+  .hobbies {
+    margin-bottom: 50px;
+  }
+
   .nav-link-colour,
-  .home-links,
-  .footer-link {
+  .home-links {
     color: #562a24;
   }
 
@@ -324,10 +451,33 @@ footer {
   }
 
   .footer-link:hover {
-    color: #bbffda;
+    color: #562a24;
     padding: 5px;
     border-radius: 5px;
   }
+  .column {
+    background-color: rgba(43,130,84,0.5);
+    border: 2px solid #000;   
+    width: 23%;
+  }
+
+    .row {
+      background-color: #bbffda;
+      padding: 10px;
+  }
+
+  .contact-h1,
+  .contact-links {
+    width: 100%;
+  }
+
+  .footer-link {
+    color: blue;
+  }
+
+  h2 {
+  color: #D7695C;
+}
 
 }
 
@@ -340,6 +490,17 @@ footer {
   .hobbies,
   footer {
     background-color: rgba(43,130,84,0.1);
+  }
+
+  nav,
+  .main-img,
+  .hobbies,
+  footer {
+        border: 2px solid #000;
+  }
+
+  .hobbies {
+    margin-bottom: 50px;
   }
 
   .nav-link-colour,
@@ -357,12 +518,46 @@ footer {
     color: #000;
   }
 
-  .footer-link {
-    color: #cd4333;
+   .footer-link {
+    color: blue;
   }
 
-   .footer-link:hover {
-     color: #6e9982;
+  .footer-link:hover {
+    color: #85291E;
   }
+
+   .column {
+    width: 100%;
+  }
+
+  .mobile-flex-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+   .row {
+      background-color: rgba(43,130,84,0.1);
+      padding: 10px;
+  }
+
+  .mytown-h1-width {
+    width: auto;
+  }
+
+  .mygroup-h1,
+  .contact-h1,
+  .contact-links {
+    width: 100%;
+  }
+
+  .fname-box,
+  .lname-box {
+    width: 100%;
+  }
+
+  h2 {
+  color: #D7695C;
+}
 
 }
+
