@@ -15,7 +15,8 @@
 
 body {
   background-color: #2B8254;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
 }
 .container {
   width: 50%;
@@ -30,6 +31,7 @@ body {
 
 p {
   color: #000;
+  font-family: 'Kanit', sans-serif;
 }
 
 a {
@@ -44,7 +46,8 @@ h1 {
   text-align: center;
   padding-top: 10px;
   color: #85291E;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -56,6 +59,9 @@ ul {
 
 /* Images */
 
+.main-img {
+background: linear-gradient(324deg, rgba(43,130,84,1) 0%, rgba(184,255,218,0.8183648459383753) 46%, rgba(133,41,30,0.6474964985994398) 90%);
+}
 
 img {
   width: 100%;
@@ -67,6 +73,11 @@ img {
   padding: 20px;
 }
 
+.rounded {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
 
 
 .edinburgh-img {
@@ -147,9 +158,10 @@ td {
 
 .mytown-text {
   text-align: center;
-  color: #fff;
+  color: #000;
   margin-bottom: 50px;
   margin-top: 30px;
+  font-family: 'Kanit', sans-serif;
 }
 
 
@@ -176,6 +188,21 @@ td {
     width: 20%;
     margin: auto;
 }
+
+.contact-h2,
+.mytown-h2,
+.mygroup-h2,
+.index-h2 {
+  text-shadow: 0px 2px 2px #000;
+}
+
+.mytown-h2,
+.contact-h2,
+.mygroup-h2,
+.index-h2 {
+  letter-spacing: 2px;
+}
+
 
 .copyright,
 .copy-mygroup {
@@ -333,6 +360,13 @@ footer {
 
 .column-text {
   color: #000;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Kanit', sans-serif;
+  line-height: 1.7;
+}
+
+.index-column-text {
+  font-family: 'Kanit', sans-serif;
 }
 
 /* Clear floats after the columns If an element is taller than the */
@@ -392,7 +426,14 @@ footer {
 
   h2 {
   color: #D7695C;
-}
+  }
+
+  .home-links:hover {
+    background-color: #D7695C;
+    padding: 5px;
+    border-radius: 5px;
+    color: #B8FFDA
+  }
 
 }
 
@@ -441,8 +482,6 @@ footer {
   footer {
         border: 2px solid #bbffda;
   }
-
-
 
   .hobbies {
     margin-bottom: 50px;
@@ -547,7 +586,7 @@ footer {
   }
 
    .row {
-      background-color: rgba(43,130,84,0.1);
+      background-color: #B8FFDA;
       padding: 10px;
   }
 
@@ -568,7 +607,7 @@ footer {
 
   h2 {
   color: #D7695C;
-}
+  }
 
 }
 
